@@ -1,8 +1,11 @@
 .Marquee {
     width: 100%;
     height: 75px;
-    padding-top: 100px;
     position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 100px;
 }
 
 .Marquee:before, .Marquee:after {
@@ -27,4 +30,29 @@
     width: 75px;
     padding-right: 50px;
     filter: invert(18%) sepia(49%) saturate(3139%) hue-rotate(315deg) brightness(89%) contrast(97%);
+    will-change: transform;
+    animation: marquee 30s linear infinite;
+}
+
+
+@keyframes marquee {
+  0% { transform: translate(0%, 0); }
+  100% { transform: translate(-1300%, 0); }
+}
+
+
+/* Respect user preferences about animations */
+
+@media (prefers-reduced-motion: reduce) {
+  .Marquee { 
+    white-space: normal 
+  }
+  .Marquee svg {
+    animation-iteration-count: 1;
+    animation-duration: 0.01; 
+    /* instead of animation: none, so an animationend event is 
+     * still available, if previously attached.
+     */
+    padding-left: 0;
+  }
 }

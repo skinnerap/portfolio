@@ -104,20 +104,46 @@
     background-color: rgb(233, 233, 233);
     flex-grow: 2;
     min-width: 600px;
+    scroll-behavior: auto;
+    overflow-y: scroll;
+}
+
+.ModalCard::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.ModalCard::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.ModalCard::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.ModalCard::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .ModalCard ul {
     list-style: none;
-    padding-left: 70px;
-    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    line-height: 2rem;
 }
 
 .ModalCard ul li {
     font-size: 110%;
+    padding-top: 15px;
+    line-height: 2.4rem;
 }
 
 .ModalCard ul li a {
-    font-size: 80%;
+    color: #701b1b;
+    text-decoration: none;
 }
 
 .ModalCard h3 {
@@ -134,6 +160,32 @@
     font-variant: all-petite-caps;
     font-size: 110%;
     cursor: pointer;
+    transition: .4s;
+}
+
+.ModalCard div button:hover {
+    color: #fff;
+    background-color: rgb(126, 18, 77);
+}
+
+.TechStack {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.TechStack h4 {
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 115%;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.TechStack svg {
+    width: 50px;
+    padding-top: 20px;
+    padding-right: 10px;
+    filter: invert(10%) sepia(54%) saturate(5888%) hue-rotate(238deg) brightness(93%) contrast(100%);
 }
 
 .ModalImg {
