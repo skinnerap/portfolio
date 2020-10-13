@@ -33,7 +33,8 @@
     color: #eeeeee;
     border-radius: 5px;
     transition: .6s ease;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
 }
 
 .Action:hover {

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import img from '../../../../assets/images/testing.png';
+import { NavLink } from 'react-router-dom';
 import classes from '../Navbar/Navbar.module.css';
 
 const navbar = () => {
@@ -15,16 +14,16 @@ const navbar = () => {
             <nav>
             <ul>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <NavLink  exact activeStyle={{ color: '#8d1b5a' }} to='/'>Home</NavLink>
                 </li>
                 <li>
-                    <Link to='/portfolio'>Portfolio</Link>
+                    <NavLink activeStyle={{ color: '#8d1b5a' }} to='/portfolio'>Portfolio</NavLink>
                 </li>
                 <li>
-                    <Link to='/contact'>Contact</Link>
+                    <NavLink activeStyle={{ color: '#8d1b5a' }} to='/contact'>Contact</NavLink>
                 </li>
                 <li>
-                    <Link to='/resume'>Resume</Link>
+                    <NavLink activeStyle={{ color: '#8d1b5a' }} to='/resume'>Resume</NavLink>
                 </li>
             </ul>
             </nav>

@@ -43,6 +43,6 @@
     color: #F0A017;
 }
 
-.Navbar ul li a:active {
+.Navbar ul li a:enabled {
     color: #931D48;
 }

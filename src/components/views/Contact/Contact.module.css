@@ -7,13 +7,14 @@
 
 .H {
     text-align: center;
-    color: #fff;
+    color: #a51d68;
     margin: auto;
     background-color: #191B20;
     padding-top: 60px;
     text-transform: uppercase;
     font-weight: 300;
     padding-bottom: 100px;
+    letter-spacing: .1rem;
 }
 
 .Contact a, .Contact h4 {
@@ -58,7 +59,7 @@
 }
 
 .Contact form {
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-flow: column;
@@ -71,7 +72,7 @@
     align-self: center;
     background-color: transparent;
     border: none;
-    border-bottom: 3px solid #d3d3d3;
+    border-bottom: 3px solid #a8a8a8;
     font-size: 75%;
     font-weight: 300;
     color: #fff;
@@ -106,6 +107,7 @@
     background-color:#2e506847;
     height: fit-content;
     padding-bottom: 20px;
+    padding-top: 5px;
 }
 
 button {

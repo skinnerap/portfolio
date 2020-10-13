@@ -1,21 +1,91 @@
 .Portfolio {
     background-color: #191B20;
     color: #d3d3d3;
-    height: 87vh;
+    height: 86vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    padding-right: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
-.Portfolio * {
-    height: 500px;
+.Portfolio div {
+    height: 400px;
     margin: auto;
-    border: 2px solid;
-    width: 294px;
+    cursor: pointer;
+    width: 290px;
+    border: 1px solid #d3d3d3;
 }
 
+.project1{
+    background:linear-gradient(0deg, rgba(207, 154, 10, 0.3), rgba(238, 255, 0, 0.3)), url('../../../assets/images/memorial.png');
+    box-shadow:inset 0 0 0 2000px rgba(141, 150, 9, 0.3);
+
+}
+
+.project2{
+    background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('../../../assets/images/car.jpeg');
+    box-shadow:inset 0 0 0 2000px rgba(255, 0, 150, 0.3);
+}
+
+.project3{
+    background:linear-gradient(0deg, rgba(4, 0, 255, 0.3), rgba(17, 0, 255, 0.3)), url('../../../assets/images/golf.jpg');
+    box-shadow:inset 0 0 0 2000px rgba(2, 5, 201, 0.342);
+}
+
+.project4{
+    background: url('../../../assets/images/visualizer.png');
+    box-shadow:inset 0 0 0 2000px rgba(0, 255, 0, 0.26);
+}
+
+.project1, .project2, .project3, .project4{
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:cover;
+    transition: .5s ease;
+}
+
+.project1:hover, .project2:hover, .project3:hover, .project4:hover {
+    
+}
 
 .Container {
     width: 100%;
 }
+
+.Portfolio div .topbar {
+    width: 98%;
+    height: 30px;
+    background-color: #eeeeee;
+    padding: 1%;
+}
+
+.Portfolio div .topbar .red,.Portfolio div .topbar .yellow,.Portfolio div .topbar .green {
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    border-radius: 50px;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.red {
+    background-color: #701b1b;
+}
+
+.yellow {
+    background-color: #8f6d0f;
+}
+
+.green {
+    background-color: #14a34b;
+}
+
+.Portfolio div .topbar span {
+    color: #464640;
+    vertical-align: middle;
+    font-size: 60%;
+    padding-left: 10px;
+}
+
+

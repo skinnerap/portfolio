@@ -4,7 +4,7 @@ import classes from './Contact.module.css';
 
 const form = () => {
     return (
-        <Spring from={{ opacity: 0}} to={{ opacity: 1}} config={{ delay: 200, duration: 1500}}>
+        <Spring from={{ opacity: 0}} to={{ opacity: 1}} config={{ delay: 1200, duration: 1200}}>
             {props => (
                 <div style={props}>
                     <form>
