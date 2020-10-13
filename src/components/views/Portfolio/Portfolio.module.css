@@ -1,0 +1,21 @@
+.Portfolio {
+    background-color: #191B20;
+    color: #d3d3d3;
+    height: 87vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-right: 80px;
+}
+
+.Portfolio * {
+    height: 500px;
+    margin: auto;
+    border: 2px solid;
+    width: 294px;
+}
+
+
+.Container {
+    width: 100%;
+}

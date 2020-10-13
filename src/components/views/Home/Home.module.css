@@ -1,0 +1,42 @@
+.Home {
+    height: 86vh;
+    background-color: #191B20;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.Home h1 {
+    padding-top: 15%;
+    letter-spacing: .1rem;
+    color: #c2c2c2;
+    font-size: 350%;
+    margin: 0;
+}
+
+.Home h2 {
+    color: #F0A017;
+    letter-spacing: .2rem;
+    font-size: 140%;
+    font-weight: 300;
+}
+
+.Action {
+    font-size: 120%;
+    cursor: pointer;
+    border: none;
+    background-color: #8d1b5a;
+    color: #eeeeee;
+    border-radius: 5px;
+    transition: .6s ease;
+    text-transform: capitalize;
+}
+
+.Action:hover {
+    background-color: #d3d3d3;
+    color: #8d1b5a;
+}

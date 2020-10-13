@@ -1,0 +1,48 @@
+.Navbar {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 135%;
+    background-color: #191B20;
+    color: #fff;
+}
+
+/*Logo*/
+.Navbar span {
+    font-family: 'Poppins', cursive;
+    font-size: 120%;
+    border: 5px solid #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-color: #F0A017;
+    margin-right: 100px;
+}
+
+.Navbar ul {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.Navbar ul li {
+    display: inline;
+}
+
+.Navbar ul li a {
+    text-decoration: none;
+    padding-left: 30px;
+    color: #f3f3f3;
+    transition: .4s;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+
+.Navbar ul li a:hover {
+    color: #F0A017;
+}
+
+.Navbar ul li a:active {
+    color: #931D48;
+}
