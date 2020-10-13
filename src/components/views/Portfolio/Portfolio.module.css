@@ -45,8 +45,12 @@
     transition: .5s ease;
 }
 
-.project1:hover, .project2:hover, .project3:hover, .project4:hover {
-    
+.project1:hover, .project2:hover, .project4:hover {
+    box-shadow:inset 0 0 0 2000px rgba(15, 15, 15, 0.459);
+}
+
+.project3:hover {
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.527);
 }
 
 .Container {
@@ -88,4 +92,60 @@
     padding-left: 10px;
 }
 
+.portHeader {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    font-size: 170%;
+}
 
+.ModalCard {
+    background-color: rgb(233, 233, 233);
+    flex-grow: 2;
+    min-width: 600px;
+}
+
+.ModalCard ul {
+    list-style: none;
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+.ModalCard ul li {
+    font-size: 110%;
+}
+
+.ModalCard ul li a {
+    font-size: 80%;
+}
+
+.ModalCard h3 {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.ModalCard div button {
+    color: #1a1a1a;
+    margin-left: 20px;
+    font-variant: all-petite-caps;
+    font-size: 110%;
+    cursor: pointer;
+}
+
+.ModalImg {
+    background: url('../../../assets/images/memorial.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.ButtonContainer {
+    width: 330px;
+    margin: auto;
+}
