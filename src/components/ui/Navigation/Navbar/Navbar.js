@@ -27,7 +27,7 @@ const navbar = () => {
                     <NavLink activeStyle={{ color: '#8d1b5a' }} to='/contact'>Contact</NavLink>
                 </li>
                 <li>
-                    <NavLink activeStyle={{ color: '#8d1b5a' }} to='/resume'>Resume</NavLink>
+                    <a href='https://firebasestorage.googleapis.com/v0/b/portfolio-478b9.appspot.com/o/AlexanderSkinnerResume.pdf?alt=media&token=002829ba-b4ca-4d03-bcde-01f668a5838a' download>Resume</a>
                 </li>
             </ul>
             </nav>

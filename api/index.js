@@ -18,7 +18,9 @@ app.post('/api/email', (req, res) => {
 
     console.log(req.body);
 
-    const subject = 'Portfolio: ' + '(' + req.body.reason + ') ' + req.body.subject;
+    const reason = req.body.business ? 'BUSINESS' : 'PERSONAL';
+
+    const subject = 'Portfolio: ' + '(' + reason + ')'
 
     var nodemailer = require('nodemailer');
 
@@ -34,7 +36,7 @@ app.post('/api/email', (req, res) => {
     from: process.env.GACC,
     to: process.env.GACC,
     subject: subject,
-    text: `Name: ${req.body.name} - Email: ${req.body.email} - ${req.body.message.toString()}`
+    text: `Name: ${req.body.name.toString()} - Email: ${req.body.email.toString()} - ${req.body.message.toString()}`
     };
 
     transporter.sendMail(mailOptions, function(error, info){
