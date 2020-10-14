@@ -206,15 +206,15 @@
 }
 
 @media(max-width: 1200px) {
-    .Portfolio {
-        flex-wrap: wrap;
-    }
-    
     .Portfolio div {
         height: 300px;
         margin: auto;
         cursor: pointer;
         width: 290px;
+    }
+
+    .portHeader {
+        font-size: 120%;
     }
 }
 
@@ -223,9 +223,24 @@
         height: auto;
         padding-bottom: 50px;
         padding-top: 50px;
+        flex-wrap: wrap;
     }
 
-    .Portfolio div {
-    
+    .ModalCard {
+        min-width: 0;
+        height: 80vh;
+    }
+
+    .ModalCard ul {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media(max-width: 650px) {
+    .Portfolio {
+        display: inline-flex;
+        padding-left: 0;
+        padding-right: 0;
     }
 }

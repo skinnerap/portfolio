@@ -56,3 +56,9 @@
     padding-left: 0;
   }
 }
+
+@media(max-width: 480px) {
+  .Marquee {
+    margin-top: 160px;
+  }
+}

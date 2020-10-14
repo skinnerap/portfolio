@@ -57,6 +57,11 @@
 
 .MobileOnly {
     display: none;
+    font-size: 200%;
+}
+
+#ham {
+    font-size: 200%;
 }
 
 @media(max-width: 1000px) {
@@ -66,5 +71,16 @@
 
     .DesktopOnly {
         display: none;
+    }
+}
+
+@media(max-width: 600px) {
+    .Navbar .logo {
+        font-size: 85%;
+        letter-spacing: .1rem;
+    }
+
+    .Navbar ul li span {
+        padding-left: 0;
     }
 }

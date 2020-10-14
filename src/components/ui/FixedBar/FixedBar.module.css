@@ -38,3 +38,20 @@
     
     filter: invert(78%) sepia(18%) saturate(7068%) hue-rotate(352deg) brightness(99%) contrast(90%);
 }
+
+@media(max-width: 480px) {
+
+    .FixedBar {
+        top: 30%;
+    }
+
+    .FixedBar ul li svg {
+        width: 30px;
+    }
+}
+
+@media(max-width: 350px) {
+    .FixedBar {
+        top: 45%;
+    }
+}

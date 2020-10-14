@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import classes from './Portfolio.module.css';
 import Aux from '../../hoc/Auxi';
 import Modal from '../../ui/Modal/Modal';
-import Project from './Project';
-import Project1 from './project1';
 
 class Portfolio extends Component {
 
@@ -94,8 +92,8 @@ class Portfolio extends Component {
                         <div>
                             <h3>Digital Curation Client</h3>
                             <div className={classes.ButtonContainer}>
-                                <a href='https://www.bethanymemorialassociation.org' target="_blank"><button>Visit Site</button></a>
-                                <a href='https://github.com/skinnerap/BethanyMemorialAssociation' target="_blank"><button>View Repo</button></a>
+                                <a href='https://www.bethanymemorialassociation.org' rel="noopener noreferrer" target="_blank"><button>Visit Site</button></a>
+                                <a href='https://github.com/skinnerap/BethanyMemorialAssociation' rel="noopener noreferrer" target="_blank"><button>View Repo</button></a>
                             </div>
                             <div className={classes.TechStack}>
                             <h4>Tech Used</h4>
@@ -134,7 +132,7 @@ class Portfolio extends Component {
                         </div>
                         <ul>
                             <li>
-                                <strong>URL</strong>: <a href='https://www.bethanymemorialassociation.org' target="_blank">https://www.bethanymemorialassociation.org</a>
+                                <strong>URL</strong>: <a href='https://www.bethanymemorialassociation.org' rel="noopener noreferrer" target="_blank">https://www.bethanymemorialassociation.org</a>
                             </li>
                             <li>
                                 <strong>Client</strong>: Bethany Memorial Association (Non-Profit)
@@ -159,8 +157,8 @@ class Portfolio extends Component {
                         <div>
                             <h3>Scheduling Software Client</h3>
                             <div className={classes.ButtonContainer}>
-                                <a href='https://tendertouchdetailing.com/' target="_blank"><button>Visit Site</button></a>
-                                <a href='https://github.com/skinnerap/tendertouch' target="_blank"><button>View Repo</button></a>
+                                <a href='https://tendertouchdetailing.com/' rel="noopener noreferrer" target="_blank"><button>Visit Site</button></a>
+                                <a href='https://github.com/skinnerap/tendertouch' rel="noopener noreferrer" target="_blank"><button>View Repo</button></a>
                             </div>
                             <div className={classes.TechStack}>
                             <h4>Tech Used</h4>
@@ -196,7 +194,7 @@ class Portfolio extends Component {
                         </div>
                         <ul>
                             <li>
-                                <strong>URL</strong>: <a href='https://tendertouchdetailing.com/' target="_blank">https://tendertouchdetailing.com/</a>
+                                <strong>URL</strong>: <a href='https://tendertouchdetailing.com/' rel="noopener noreferrer" target="_blank">https://tendertouchdetailing.com/</a>
                             </li>
                             <li>
                                 <strong>Client</strong>: Tender Touch Mobile Auto Detailing (LLC)
@@ -235,8 +233,8 @@ class Portfolio extends Component {
                         <div>
                             <h3>Golf Data Client</h3>
                             <div className={classes.ButtonContainer}>
-                                <a href='https://www.myswingstats.com' target="_blank"><button>Visit Site</button></a>
-                                <a href='https://github.com/skinnerap/my-swing-stats' target="_blank"><button>View Repo</button></a>
+                                <a href='https://www.myswingstats.com' rel="noopener noreferrer" target="_blank"><button>Visit Site</button></a>
+                                <a href='https://github.com/skinnerap/my-swing-stats' rel="noopener noreferrer" target="_blank"><button>View Repo</button></a>
                             </div>
                             <div className={classes.TechStack}>
                             <h4>Tech Used</h4>
@@ -275,7 +273,7 @@ class Portfolio extends Component {
                         </div>
                         <ul>
                             <li>
-                                <strong>URL</strong>: <a href='https://www.myswingstats.com' target="_blank">https://www.myswingstats.com</a>
+                                <strong>URL</strong>: <a href='https://www.myswingstats.com' rel="noopener noreferrer" target="_blank">https://www.myswingstats.com</a>
                             </li>
                             <li>
                                 <strong>Client</strong>: My Swing Stats (LLC)
@@ -298,12 +296,12 @@ class Portfolio extends Component {
                         <div>
                             <h3>Algorithm Visualizers - Personal Project</h3>
                             <div className={classes.ButtonContainer1}>
-                                <a href='https://skinnerap.github.io/PathFinder-Visualizer/' target="_blank"><button>Visit Pathfinding Site</button></a>
-                                <a href='https://github.com/skinnerap/PathFinder-Visualizer' target="_blank"><button>View Repo</button></a>
+                                <a href='https://skinnerap.github.io/PathFinder-Visualizer/' rel="noopener noreferrer" target="_blank"><button>Visit Pathfinding Site</button></a>
+                                <a href='https://github.com/skinnerap/PathFinder-Visualizer' rel="noopener noreferrer" target="_blank"><button>View Repo</button></a>
                             </div>
                             <div className={classes.ButtonContainer2}>
-                                <a href='https://skinnerap.github.io/Sort-Visualizer/' target="_blank"><button>Visit Sorting Site</button></a>
-                                <a href='https://github.com/skinnerap/Sort-Visualizer' target="_blank"><button>View Repo</button></a>
+                                <a href='https://skinnerap.github.io/Sort-Visualizer/' rel="noopener noreferrer" target="_blank"><button>Visit Sorting Site</button></a>
+                                <a href='https://github.com/skinnerap/Sort-Visualizer' rel="noopener noreferrer" target="_blank"><button>View Repo</button></a>
                             </div>
                             <div className={classes.TechStack}>
                             <h4>Tech Used</h4>
@@ -330,8 +328,8 @@ class Portfolio extends Component {
                         </div>
                         <ul>
                             <li>
-                                <strong>URL</strong>: <a href='https://skinnerap.github.io/PathFinder-Visualizer/' target="_blank">https://skinnerap.github.io/PathFinder-Visualizer/</a><br />
-                                <strong>URL</strong>: <a href='https://skinnerap.github.io/Sort-Visualizer/' target="_blank">https://skinnerap.github.io/Sort-Visualizer/</a>
+                                <strong>URL</strong>: <a href='https://skinnerap.github.io/PathFinder-Visualizer/' rel="noopener noreferrer" target="_blank">https://skinnerap.github.io/PathFinder-Visualizer/</a><br />
+                                <strong>URL</strong>: <a href='https://skinnerap.github.io/Sort-Visualizer/' rel="noopener noreferrer" target="_blank">https://skinnerap.github.io/Sort-Visualizer/</a>
                             </li>
                             <li>
                                 <strong>Challenges</strong>: The algorithms themselves are well known and trivial to implement. The main challenge came down to applying
@@ -347,25 +345,25 @@ class Portfolio extends Component {
                 <div className={classes.Container}>
                     <div className={classes.Portfolio}>
 
-                    <div onClick={() => this.showModalHandler(1)} onMouseEnter={() => this.handleHover(1)} onMouseLeave={() => this.handleHoverLeave(1)} className={classes.project1}>
-            <div className={classes.topbar}>
-                <div className={classes.red}></div>
-                <div className={classes.yellow}></div>
-                <div className={classes.green}></div>
-                <span>/File-Uploading</span>
-        
-                <h3 style={this.state.opacity1} className={classes.portHeader}>
-                    <strong>Memorial Association</strong> <br /> File Upload Platform <br />+<br /> Administration Controls
-                </h3>
-        
-            </div>
-        </div>
+                        <div onClick={() => this.showModalHandler(1)} onMouseEnter={() => this.handleHover(1)} onMouseLeave={() => this.handleHoverLeave(1)} className={classes.project1}>
+                            <div className={classes.topbar}>
+                                <div className={classes.red}></div>
+                                <div className={classes.yellow}></div>
+                                <div className={classes.green}></div>
+                                <span>/File-Uploading</span>
+                        
+                                <h3 style={this.state.opacity1} className={classes.portHeader}>
+                                    <strong>Memorial Association</strong> <br /> File Upload Platform <br />+<br /> Administration Controls
+                                </h3>
+                        
+                            </div>
+                        </div>
                         <div onClick={() => this.showModalHandler(2)} onMouseEnter={() => this.handleHover(2)} onMouseLeave={() => this.handleHoverLeave(2)} className={classes.project2}>
                             <div className={classes.topbar}>
                                 <div className={classes.red}></div>
                                 <div className={classes.yellow}></div>
                                 <div className={classes.green}></div>
-                               <span>/Scheduling-Software</span>
+                                <span>/Scheduling-Software</span>
                                 
                                 <h3  style={this.state.opacity2}className={classes.portHeader}><strong>Auto Business</strong><br /> Scheduling Software <br />+<br /> Customizable Admin Panel</h3>
                                 

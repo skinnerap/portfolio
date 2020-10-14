@@ -170,3 +170,17 @@ button:disabled {
         padding: 50px;
     }
 }
+
+@media(max-width: 400px) {
+    .Contact div {
+        padding-left: 7px;
+    }
+
+    .Contact form {
+        width: 250px;
+    }
+
+    .Contact .RadioBtn {
+        width: 15px;
+    }
+}

@@ -8,6 +8,7 @@ import Contact from '../../views/Contact/Contact';
 import Portfolio from '../../views/Portfolio/Portfolio';
 import Backdrop from '../Backdrop/Backdrop';
 import classes from './Layout.module.css';
+import Axios from 'axios';
 
 class Layout extends Component {
 
@@ -24,12 +25,28 @@ class Layout extends Component {
         this.setState({sideDrawerOpen: false, backdropOpen: false});
     }
 
+    resumeHandler = () => {
+        this.setState({sideDrawerOpen: false, backdropOpen: false});
+        Axios({
+            url: 'http://localhost:8080/api/download', //your url
+            method: 'GET',
+            responseType: 'blob', // important
+          }).then((response) => {
+             const url = window.URL.createObjectURL(new Blob([response.data]));
+             const link = document.createElement('a');
+             link.href = url;
+             link.setAttribute('download', 'AlexanderSkinnerResume.pdf'); //or any other extension
+             document.body.appendChild(link);
+             link.click();
+          });
+    }
+
     render() {
         return (
             <div className={classes.Layout}>
                 <Router>
                     <Navbar clicked={this.openSidedrawerHandler} />
-                    <Sidedrawer show={this.state.sideDrawerOpen} />
+                    <Sidedrawer clicked={this.resumeHandler} clickedLink={this.closeSidedrawerHandler} show={this.state.sideDrawerOpen} />
                     <Backdrop clicked={this.closeSidedrawerHandler} show={this.state.backdropOpen} />
                     <FixedBar />
                     <Switch>

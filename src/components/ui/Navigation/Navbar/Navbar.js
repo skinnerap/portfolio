@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Axios from 'axios';
 import classes from '../Navbar/Navbar.module.css';
@@ -46,7 +46,7 @@ const navbar = ( props ) => {
                     
                 </li>
                 <li>
-                    <span className={classes.MobileOnly} onClick={props.clicked}>=</span>
+                    <span id='ham' className={classes.MobileOnly} onClick={props.clicked}><strong>≡</strong></span>
                 </li>
             </ul>
             </nav>
