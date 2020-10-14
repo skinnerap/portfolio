@@ -141,3 +141,12 @@ button:disabled {
     font-weight: 300;
     letter-spacing: .2rem;
 }
+
+@media(max-width: 1000px) {
+    .Navbar_Navbar__2QmAk .Navbar_logo__3l58d {
+        color: #F0A017;
+        cursor: inherit;
+        font-size: 75%;
+        letter-spacing: 0;
+    }
+}

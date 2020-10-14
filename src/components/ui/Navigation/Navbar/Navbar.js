@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Axios from 'axios';
 import classes from '../Navbar/Navbar.module.css';
 
-const navbar = () => {
+const navbar = ( props ) => {
 
     const resumeHandler = () => {
 
@@ -33,17 +33,20 @@ const navbar = () => {
             <nav>
             <ul>
                 <li>
-                    <NavLink  exact activeStyle={{ color: '#8d1b5a' }} to='/'>Home</NavLink>
+                    <NavLink className={classes.DesktopOnly} exact activeStyle={{ color: '#8d1b5a' }} to='/'>Home</NavLink>
                 </li>
                 <li>
-                    <NavLink activeStyle={{ color: '#8d1b5a' }} to='/portfolio'>Portfolio</NavLink>
+                    <NavLink className={classes.DesktopOnly} activeStyle={{ color: '#8d1b5a' }} to='/portfolio'>Portfolio</NavLink>
                 </li>
                 <li>
-                    <NavLink activeStyle={{ color: '#8d1b5a' }} to='/contact'>Contact</NavLink>
+                    <NavLink className={classes.DesktopOnly} activeStyle={{ color: '#8d1b5a' }} to='/contact'>Contact</NavLink>
                 </li>
                 <li>
-                    <span onClick={resumeHandler}>Resume</span>
+                    <span className={classes.DesktopOnly} onClick={resumeHandler}>Resume</span>
                     
+                </li>
+                <li>
+                    <span className={classes.MobileOnly} onClick={props.clicked}>=</span>
                 </li>
             </ul>
             </nav>

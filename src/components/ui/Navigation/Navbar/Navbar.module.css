@@ -54,3 +54,17 @@
     cursor: inherit;
     letter-spacing: .4rem;
 }
+
+.MobileOnly {
+    display: none;
+}
+
+@media(max-width: 1000px) {
+    .MobileOnly {
+        display: block;
+    }
+
+    .DesktopOnly {
+        display: none;
+    }
+}
