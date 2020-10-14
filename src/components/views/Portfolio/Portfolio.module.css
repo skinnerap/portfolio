@@ -1,10 +1,8 @@
 .Portfolio {
     background-color: #191B20;
     color: #d3d3d3;
-    height: 87vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    min-height: 87vh;
+    display: flex;
     padding-left: 150px;
     padding-right: 150px;
 }
@@ -205,4 +203,29 @@
 .ButtonContainer1, .ButtonContainer2 {
     width: 415px;
     margin: auto;
+}
+
+@media(max-width: 1200px) {
+    .Portfolio {
+        flex-wrap: wrap;
+    }
+    
+    .Portfolio div {
+        height: 300px;
+        margin: auto;
+        cursor: pointer;
+        width: 290px;
+    }
+}
+
+@media(max-width: 900px) {
+    .Portfolio {
+        height: auto;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .Portfolio div {
+    
+    }
 }

@@ -1,6 +1,7 @@
 .Contact {
     background-color: #191B20;
-    height: 59vh;
+    min-height: 59vh;
+    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -142,11 +143,30 @@ button:disabled {
     letter-spacing: .2rem;
 }
 
-@media(max-width: 1000px) {
-    .Navbar_Navbar__2QmAk .Navbar_logo__3l58d {
-        color: #F0A017;
-        cursor: inherit;
-        font-size: 75%;
-        letter-spacing: 0;
+#contactForm {
+    padding-bottom: 50px;
+}
+
+@media(max-width: 1100px) {
+    .Contact {
+        flex-flow: column;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .Contact div {
+        align-self: center;
+    }
+
+    .Contact form {
+        padding-bottom: 50px;
+    }
+
+    .Contact .Card {
+        margin-bottom: 80px;
+    }
+
+    .H {
+        padding: 50px;
     }
 }

@@ -5,12 +5,19 @@ import Axios from 'axios';
 
 const sideDrawer = ( props ) => {
 
-    const showSidedrawer = {display: 'block'};
+    const showSidedrawer = {display: 'flex'};
     const hideSidedrawer = {display: 'none'};
 
-    const classList = props.show ? showSidedrawer : hideSidedrawer;
+    const shouldShowOrHide = props.show ? showSidedrawer : hideSidedrawer;
 
-    console.log(classList);
+    const animation = {
+                        transform: props.show ? 'translateX(0)' : 'translateX(-200vh)',
+                        opacity: props.show ? '1' : '0',
+                        display: props.show ? 'flex' : 'hidden'
+                      }
+
+    const joinedClasses = {...shouldShowOrHide, ...animation};
+
 
     const resumeHandler = () => {
 
@@ -29,7 +36,7 @@ const sideDrawer = ( props ) => {
     }
 
     return (
-        <div className={classes.Sidedrawer} style={classList}>
+        <div className={classes.Sidedrawer} style={joinedClasses}>
             <ul>
                 <li>
                     <NavLink  exact activeStyle={{ color: '#8d1b5a' }} to='/'>Home</NavLink>

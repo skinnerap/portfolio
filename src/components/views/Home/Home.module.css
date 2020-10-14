@@ -1,5 +1,5 @@
 .Home {
-    height: 87vh;
+    min-height: 87vh;
     background-color: #191B20;
     position: relative;
     display: flex;
