@@ -5,7 +5,7 @@ import classes from './Contact.module.css';
 const card = () => {
 
     return (
-        <Spring from={{ opacity: 0, marginTop: '-500px'}} to={{ opacity: 1, marginTop: '0'}} config={{ delay: 200, duration: 1500}}>
+        <Spring from={{ opacity: 0, marginTop: '-500px'}} to={{ opacity: 1, marginTop: '0'}} config={{ duration: 800}}>
             {props => (
                 <div style={props}>
                     <div className={classes.Card}>

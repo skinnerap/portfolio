@@ -13,6 +13,11 @@ app.use(cors());
 app.get('/', (req, res) => 
     res.send('File upload API ready for use'));
 
+app.get('/api/download', function(req, res){
+    const file = './AlexanderSkinnerResume.pdf';
+    res.download(file); // Set disposition and send it.
+});
+
 
 app.post('/api/email', (req, res) => {
 

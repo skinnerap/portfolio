@@ -110,7 +110,7 @@ class Form extends Component {
 
     render() {
         return (
-            <Spring from={{ opacity: 0}} to={{ opacity: 1}} config={{ delay: 1200, duration: 1200}}>
+            <Spring from={{ opacity: 0}} to={{ opacity: 1}} config={{ delay: 600, duration: 400}}>
                 {props => (
                     <div style={props}>
                         <form id='contactForm'>

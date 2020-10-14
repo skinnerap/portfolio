@@ -1,16 +1,31 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import Axios from 'axios';
 import classes from '../Navbar/Navbar.module.css';
 
 const navbar = () => {
 
+    const resumeHandler = () => {
 
+        Axios({
+            url: 'http://localhost:8080/api/download', //your url
+            method: 'GET',
+            responseType: 'blob', // important
+          }).then((response) => {
+             const url = window.URL.createObjectURL(new Blob([response.data]));
+             const link = document.createElement('a');
+             link.href = url;
+             link.setAttribute('download', 'AlexanderSkinnerResume.pdf'); //or any other extension
+             document.body.appendChild(link);
+             link.click();
+          });
+    }
 
     return (
         <div className={classes.Navbar}>
             <ul>
                 <li>
-                    <span>
+                    <span className={classes.logo}>
                         Alexander Skinner
                     </span>
                 </li>
@@ -27,7 +42,8 @@ const navbar = () => {
                     <NavLink activeStyle={{ color: '#8d1b5a' }} to='/contact'>Contact</NavLink>
                 </li>
                 <li>
-                    <a href='https://firebasestorage.googleapis.com/v0/b/portfolio-478b9.appspot.com/o/AlexanderSkinnerResume.pdf?alt=media&token=002829ba-b4ca-4d03-bcde-01f668a5838a' download>Resume</a>
+                    <span onClick={resumeHandler}>Resume</span>
+                    
                 </li>
             </ul>
             </nav>

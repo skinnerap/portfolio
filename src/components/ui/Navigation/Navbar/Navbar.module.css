@@ -24,7 +24,7 @@
     display: inline;
 }
 
-.Navbar ul li a {
+.Navbar ul li a, .Navbar ul li span{
     text-decoration: none;
     padding-left: 30px;
     color: #f3f3f3;
@@ -32,6 +32,13 @@
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: .1rem;
+    font-size: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.Navbar ul li span:hover {
+    color: #F0A017;
 }
 
 .Navbar ul li a:hover {
@@ -40,4 +47,10 @@
 
 .Navbar ul li a:enabled {
     color: #931D48;
+}
+
+.Navbar .logo {
+    color: #F0A017;
+    cursor: inherit;
+    letter-spacing: .4rem;
 }
