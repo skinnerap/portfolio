@@ -1,5 +1,5 @@
 .Home {
-    height: 86vh;
+    height: 87vh;
     background-color: #191B20;
     position: relative;
     display: flex;
@@ -11,7 +11,7 @@
 }
 
 .Home h1 {
-    padding-top: 15%;
+    padding-top: 13%;
     letter-spacing: .1rem;
     color: #c2c2c2;
     font-size: 350%;

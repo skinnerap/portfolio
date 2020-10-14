@@ -12,12 +12,12 @@ const form = () => {
                         <input type='email' placeholder='Email'></input>
                         <textarea placeholder='Message'></textarea>
                         <div className={classes.Radio}>
-                            <label for='choice-business'>
+                            <label for='choice-business' className={classes.Reason}>
                                 Business
                             </label>
                             <input className={classes.RadioBtn} type='radio' name='choice-business' />
-                            <span className={classes.Span}> - or - </span>
-                            <label for='choice-personal'>
+                            <span className={classes.Span}> <strong>OR</strong> </span>
+                            <label for='choice-personal' className={classes.Reason}>
                                 Personal
                             </label>
                             <input className={classes.RadioBtn} type='radio' name='choice-personal' />

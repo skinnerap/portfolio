@@ -201,3 +201,8 @@
     width: 330px;
     margin: auto;
 }
+
+.ButtonContainer1, .ButtonContainer2 {
+    width: 415px;
+    margin: auto;
+}

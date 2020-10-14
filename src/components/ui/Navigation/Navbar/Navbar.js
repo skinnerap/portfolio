@@ -9,7 +9,11 @@ const navbar = () => {
     return (
         <div className={classes.Navbar}>
             <ul>
-                <li><span>Alexander Skinner</span></li>
+                <li>
+                    <span>
+                        Alexander Skinner
+                    </span>
+                </li>
             </ul>
             <nav>
             <ul>

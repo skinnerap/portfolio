@@ -30,7 +30,7 @@
     text-align: center;
     padding-left: 0;
     font-size: 100%;
-
+    color: #F0A017;
 }
 
 .Contact .Form {
@@ -103,10 +103,10 @@
 }
 
 .Card {
-    width: 260px;
+    width: 280px;
     background-color:#2e506847;
     height: fit-content;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-top: 5px;
 }
 
@@ -128,4 +128,10 @@ button {
     padding-right: 40px;
     padding-left: 20px;
     font-weight: 700;
+}
+
+.Reason {
+    font-size: 90%;
+    font-weight: 300;
+    letter-spacing: .2rem;
 }

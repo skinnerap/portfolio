@@ -11,13 +11,8 @@
 
 /*Logo*/
 .Navbar span {
-    font-family: 'Poppins', cursive;
-    font-size: 120%;
-    border: 5px solid #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border-color: #F0A017;
-    margin-right: 100px;
+    color: #F0A017;
+    letter-spacing: .2rem;
 }
 
 .Navbar ul {

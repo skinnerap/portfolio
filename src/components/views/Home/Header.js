@@ -1,5 +1,6 @@
 import React from 'react';
 import { Spring } from 'react-spring/renderprops';
+import { NavLink } from 'react-router-dom';
 import classes from './Home.module.css';
 
 
@@ -17,7 +18,7 @@ const header = ( ) => {
                             <h2>I code software for the web</h2>
                         </div>
                         <div>
-                            <button className={classes.Action}>Check out my work</button>
+                            <NavLink to='/portfolio'><button className={classes.Action}>Check out my work</button></NavLink>
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ const card = () => {
                     <div className={classes.Card}>
                 <div className={classes.CardHeader}>
                     <h4>
-                        Information:
+                        Details:
                     </h4>
                 </div>
                 <div>
